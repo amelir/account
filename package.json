@@ -14,6 +14,7 @@
     "axios": "^0.18.0",
     "components": "github:amelir/components",
     "vue": "^2.5.16",
+    "vue-feather-icons": "^4.7.1",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
