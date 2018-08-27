@@ -1,0 +1,35 @@
+{
+  "name": "account",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:amelir/account.git",
+  "author": "amelir",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "components": "github:amelir/components",
+    "vue": "^2.5.16",
+    "vue-router": "^3.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.0.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.9.2",
+    "postcss-loader": "^2.1.6",
+    "sass-loader": "^7.0.3",
+    "vue-loader": "^15.2.6",
+    "vue-style-loader": "^4.1.1",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "root": "/account"
+}
