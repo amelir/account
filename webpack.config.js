@@ -16,6 +16,11 @@ module.exports = {
     publicPath: IS_DEV ? '/' : config.root
   },
 
+  resolve: {
+    extensions: ['.js', '.json', '.vue'],
+    modules: [path.join(__dirname, 'node_modules')]
+  },
+
   devtool: IS_DEV ? 'source-map' : false,
 
   devServer: {

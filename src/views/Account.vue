@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import Navbar from 'components/Navbar.vue';
+import Navbar from 'components/Navbar';
 import { CreditCardIcon, HardDriveIcon, LockIcon, UserIcon } from 'vue-feather-icons';
 
 export default {
