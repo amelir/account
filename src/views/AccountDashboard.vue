@@ -1,7 +1,5 @@
 <template>
   <div class="page">
-    <Navbar/>
-
     <div class="grid">
       <div class="item">
         <div class="icon">
@@ -35,7 +33,6 @@
 </template>
 
 <script>
-import Navbar from 'components/Navbar';
 import { CreditCardIcon, HardDriveIcon, LockIcon, UserIcon } from 'vue-feather-icons';
 
 export default {
@@ -43,7 +40,6 @@ export default {
     CreditCardIcon,
     HardDriveIcon,
     LockIcon,
-    Navbar,
     UserIcon
   }
 }

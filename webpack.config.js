@@ -18,7 +18,10 @@ module.exports = {
 
   resolve: {
     extensions: ['.js', '.json', '.vue'],
-    modules: [path.join(__dirname, 'node_modules')]
+    modules: [path.join(__dirname, 'node_modules')],
+    alias: {
+      vue: 'vue/dist/vue.js'
+    }
   },
 
   devtool: IS_DEV ? 'source-map' : false,
@@ -65,8 +68,11 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      template: './src/index.html',
-      filename: './index.html',
+      inject: false,
+      title: 'Amelir',
+      template: require('html-webpack-template'),
+      appMountId: 'app',
+      mobile: true,
       minify: IS_DEV ? {} : {
         collapseWhitespace: true,
         minifyCSS: true,
