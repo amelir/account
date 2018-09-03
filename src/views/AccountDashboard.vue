@@ -1,33 +1,33 @@
 <template>
   <div class="page">
     <div class="grid">
-      <div class="item">
+      <router-link :to="{name: 'account_personalize'}" class="item">
         <div class="icon">
           <UserIcon/>
         </div>
         <span>Personalize</span>
-      </div>
+      </router-link>
 
-      <div class="item">
+      <router-link :to="{name: 'account_security'}" class="item">
         <div class="icon">
           <LockIcon/>
         </div>
         <span>Login & Security</span>
-      </div>
+      </router-link>
 
-      <div class="item">
+      <router-link :to="{name: 'account_data'}" class="item">
         <div class="icon">
           <HardDriveIcon/>
         </div>
         <span>My Data</span>
-      </div>
+      </router-link>
 
-      <div class="item">
+      <router-link :to="{name: 'account_billing'}" class="item">
         <div class="icon">
           <CreditCardIcon/>
         </div>
         <span>Billing & Payments</span>
-      </div>
+      </router-link>
     </div>
   </div>
 </template>
@@ -41,6 +41,27 @@ export default {
     HardDriveIcon,
     LockIcon,
     UserIcon
+  },
+
+  sidebar: {
+    links: [
+      {
+        to: 'account_personalize',
+        label: 'Personalize'
+      },
+      {
+        to: 'account_security',
+        label: 'Security'
+      },
+      {
+        to: 'account_data',
+        label: 'Data'
+      },
+      {
+        to: 'account_billing',
+        label: 'Billing'
+      }
+    ]
   }
 }
 </script>
