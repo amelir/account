@@ -46,7 +46,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import 'components/colors.scss';
+  @import 'components/settings.scss';
 
   .grid{
     max-width: 65rem;
