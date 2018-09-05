@@ -66,6 +66,7 @@ export default {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    text-decoration: none;
     transition: box-shadow 0.1s ease-in-out;
 
     .icon{
